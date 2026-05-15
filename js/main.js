@@ -149,6 +149,47 @@
     reveals.forEach((el) => el.classList.add('is-visible'));
   }
 
+  /* Certificate lightbox */
+  const lightbox = document.getElementById('certLightbox');
+  const lbImg    = document.getElementById('certLbImg');
+  const lbClose  = document.getElementById('certLbClose');
+  const lbBack   = document.getElementById('certLbBackdrop');
+
+  function openLightbox(src, label) {
+    lbImg.src = src;
+    lbImg.alt = label || 'Certificate';
+    lightbox.classList.add('open');
+    lightbox.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+    lbClose.focus();
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove('open');
+    lightbox.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    lbImg.src = '';
+  }
+
+  if (lightbox) {
+    $$('.cred[data-cert]').forEach((card) => {
+      card.addEventListener('click', () =>
+        openLightbox(card.dataset.cert, card.querySelector('h3')?.textContent)
+      );
+      card.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          openLightbox(card.dataset.cert, card.querySelector('h3')?.textContent);
+        }
+      });
+    });
+    lbClose.addEventListener('click', closeLightbox);
+    lbBack.addEventListener('click', closeLightbox);
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && lightbox.classList.contains('open')) closeLightbox();
+    });
+  }
+
   console.log(
     '%c DAVID UGBOR %c FIRE WATCH OFFICER · #zeroharm ',
     'background:#d94a1a;color:#fff;font-weight:700;padding:6px 10px;font-family:monospace;',
