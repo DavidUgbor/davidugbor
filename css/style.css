@@ -642,8 +642,9 @@ section { padding: 120px 40px; max-width: 1500px; margin: 0 auto; }
 /* "View certificate" prompt on clickable cred cards */
 .cred-view-cert {
   display: block;
-  margin-top: 14px;
+  margin-top: 5px;
   font-size: 10px;
+  font-weight: 400;
   letter-spacing: 0.2em;
   color: var(--accent);
   text-transform: uppercase;
