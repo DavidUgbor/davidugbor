@@ -3,11 +3,602 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>David Ugbor — Maritime Safety &amp; Fire Officer</title>
-<link rel="canonical" href="html/index.html" />
+<title>David Ugbor — Maritime Safety & Fire Officer · Offshore West Africa</title>
+<meta name="description" content="David Ugbor — STCW-certified Maritime Safety & Fire Officer. Advanced Fire Fighting (IMO 2.03), OPITO HUET 5092, ISPON HSE I & II. Based in Port Harcourt, available for offshore mobilisation." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-<p><a href="html/index.html">Open portfolio</a></p>
-<script>location.replace("html/index.html");</script>
+
+<!-- ========================================================= -->
+<!-- TOP NAV -->
+<!-- ========================================================= -->
+<header class="top-bar">
+  <div class="top-bar-inner">
+    <a href="#top" class="logo">
+      <div class="logo-mark">
+        <svg viewBox="0 0 40 40" width="36" height="36" aria-hidden="true">
+          <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.4" fill="none"/>
+          <path d="M20 4 L22 20 L20 36 L18 20 Z" fill="currentColor"/>
+          <path d="M4 20 L20 18 L36 20 L20 22 Z" fill="currentColor" opacity="0.55"/>
+        </svg>
+      </div>
+      <div class="logo-text">
+        <span class="logo-name">DAVID UGBOR</span>
+        <span class="logo-sub">MARITIME SAFETY / FIRE OFFICER</span>
+      </div>
+    </a>
+
+    <nav class="main-nav" aria-label="Primary">
+      <a href="#top">Home</a>
+      <a href="#pillars">Services</a>
+      <a href="#bio">Bio</a>
+      <a href="#credentials">Credentials</a>
+      <a href="#fleet">Fleet</a>
+      <a href="#waters">Waters</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="top-hashtag">
+      <span>#</span><span>zeroharm</span>
+    </div>
+  </div>
+</header>
+
+<!-- ========================================================= -->
+<!-- HERO — Rotating image carousel -->
+<!-- ========================================================= -->
+<section class="hero" id="top">
+  <div class="hero-carousel" id="heroCarousel">
+
+    <video class="hero-video-bg" autoplay muted loop playsinline>
+      <source src="images/ocean.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero-slide active" data-slide="0">
+      <img class="slide-art" src="images/fire-fight.jpeg" alt="David Ugbor in red coverall fighting fire with extinguisher during AFF training" style="object-position: center 45%;">
+      <div class="slide-caption mono">
+        <span>01 / 04</span>
+        <span>Advanced Fire Fighting · Live burn · Port Harcourt</span>
+      </div>
+    </div>
+
+    <div class="hero-slide" data-slide="1">
+      <img class="slide-art" src="images/huet-escape.jpeg" alt="HUET underwater escape training with emergency breathing system" style="object-position: center 20%;">
+      <div class="slide-caption mono">
+        <span>02 / 04</span>
+        <span>OPITO HUET 5092 · EBS deployment · Escape drill</span>
+      </div>
+    </div>
+
+    <div class="hero-slide" data-slide="2">
+      <img class="slide-art" src="images/group-fire.jpeg" alt="Fire fighting team training with extinguishers at Charkin Maritime">
+      <div class="slide-caption mono">
+        <span>03 / 04</span>
+        <span>Team fire response · IMO 2.03 drill · Charkin</span>
+      </div>
+    </div>
+
+    <div class="hero-slide" data-slide="3">
+      <img class="slide-art" src="images/sea-survival.jpeg" alt="Sea survival training on liferaft in pool" style="object-position: center 15%;">
+      <div class="slide-caption mono">
+        <span>04 / 04</span>
+        <span>Sea survival · Liferaft drill · STCW-A-VI/1</span>
+      </div>
+    </div>
+
+    <!-- Hero overlay text -->
+    <div class="hero-overlay">
+      <p class="hero-eyebrow mono">MARITIME SAFETY / FIRE OFFICER · OFFSHORE WEST AFRICA</p>
+      <h1 class="hero-h">
+        <span class="line"><span>Standing between the crew</span></span>
+        <span class="line"><span>and what would <em>harm them.</em></span></span>
+      </h1>
+      <p class="hero-sub">
+        I am <strong>David Ugbor</strong> — Maritime Safety &amp; Fire Officer,
+        <strong>Advanced Fire Fighting certified</strong> (IMO 2.03), ISPON HSE Level 1 &amp; 2.
+        Two years of active field safety at Fieldoption Engineering Ltd. Zero lost-time incidents.
+      </p>
+      <div class="hero-cta">
+        <a href="#pillars" class="btn">What I do</a>
+        <a href="#contact" class="btn btn-ghost">Hire me</a>
+      </div>
+    </div>
+
+    <!-- Slide dots -->
+    <div class="hero-dots" id="heroDots">
+      <button type="button" class="dot active" data-i="0" aria-label="Slide 1 of 4"></button>
+      <button type="button" class="dot" data-i="1" aria-label="Slide 2 of 4"></button>
+      <button type="button" class="dot" data-i="2" aria-label="Slide 3 of 4"></button>
+      <button type="button" class="dot" data-i="3" aria-label="Slide 4 of 4"></button>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================= -->
+<!-- PILLARS — Four service cards -->
+<!-- ========================================================= -->
+<section class="pillars" id="pillars">
+  <div class="section-head">
+    <span class="section-tag mono">— Services</span>
+    <h2 class="section-h">Four disciplines, <em>one officer.</em></h2>
+    <p class="section-lead">
+      Fire watch, advanced firefighting response, HSE compliance, and HUET-certified
+      for helicopter offshore transit. Cross-trained, cross-certified.
+    </p>
+  </div>
+
+  <div class="pillar-grid">
+
+    <article class="pillar">
+      <div class="pillar-img">
+        <img src="images/fire-fight.jpeg" alt="Fire watch in action — David Ugbor with extinguisher" class="pillar-photo" style="object-position: center 40%;">
+        <span class="pillar-num">01</span>
+      </div>
+      <div class="pillar-body">
+        <h3>Fire Watch Officer</h3>
+        <p class="pillar-summary">2+ years standing watch over hot work, fuel transfers, helideck approach windows, and high-risk subsea operations across PSV, AHT and MPSV decks.</p>
+        <ul class="pillar-bullets">
+          <li>Hot work permit issue &amp; oversight</li>
+          <li>Extinguisher &amp; fixed-system daily audits</li>
+          <li>Atmosphere &amp; gas-free testing</li>
+          <li>Sentry duty during welding / cutting / grinding</li>
+        </ul>
+        <a href="#contact" class="pillar-more">Engage <span>→</span></a>
+      </div>
+    </article>
+
+    <article class="pillar">
+      <div class="pillar-img">
+        <img src="images/group-fire.jpeg" alt="Advanced Fire Fighting team training with extinguishers" class="pillar-photo" style="object-position: center 25%;">
+        <span class="pillar-num">02</span>
+      </div>
+      <div class="pillar-body">
+        <h3>Advanced Fire Fighting</h3>
+        <p class="pillar-summary">IMO 2.03 certified — trained in BA entry, compartment fire attack, foam &amp; CO₂ deployment, search &amp; rescue in smoke-filled spaces.</p>
+        <ul class="pillar-bullets">
+          <li>Breathing Apparatus (BA) entry &amp; team lead</li>
+          <li>Foam, dry-powder &amp; CO₂ attack</li>
+          <li>Compartment &amp; machinery space fires</li>
+          <li>Search, rescue &amp; casualty removal</li>
+        </ul>
+        <a href="#contact" class="pillar-more">Engage <span>→</span></a>
+      </div>
+    </article>
+
+    <article class="pillar">
+      <div class="pillar-img">
+        <img src="images/sea-survival.jpeg" alt="Sea survival training — David Ugbor on liferaft" class="pillar-photo" style="object-position: center 20%;">
+        <span class="pillar-num">03</span>
+      </div>
+      <div class="pillar-body">
+        <h3>HSE Compliance &amp; Sea Survival</h3>
+        <p class="pillar-summary">ISPON Level 1 &amp; 2 certified. STCW Basic Sea Survival (SAS) trained — liferaft deployment, survival swimmer, and emergency donning drills. JSA-led culture, behaviour-based safety, root-cause incident reporting to IMO standards.</p>
+        <ul class="pillar-bullets">
+          <li>Toolbox talks &amp; JSAs</li>
+          <li>Risk assessment for non-routine ops</li>
+          <li>Near-miss &amp; root-cause reporting</li>
+          <li>Audit-ready documentation</li>
+          <li>Liferaft deployment &amp; sea survival drills</li>
+          <li>Emergency immersion suit &amp; lifejacket donning</li>
+        </ul>
+        <a href="#contact" class="pillar-more">Engage <span>→</span></a>
+      </div>
+    </article>
+
+    <article class="pillar">
+      <div class="pillar-img">
+        <img src="images/huet-close.jpeg" alt="OPITO HUET training — underwater escape with EBS" class="pillar-photo" style="object-position: center top;">
+        <span class="pillar-num">04</span>
+      </div>
+      <div class="pillar-body">
+        <h3>OPITO HUET + EBS</h3>
+        <p class="pillar-summary">Certified to travel to and from offshore installations by helicopter — and to survive if it goes into the water. OPITO Standard 5092 with Emergency Breathing System.</p>
+        <ul class="pillar-bullets">
+          <li>Helicopter Underwater Escape (HUET)</li>
+          <li>Emergency Breathing System (EBS)</li>
+          <li>Inverted ditching &amp; window exit</li>
+          <li>Offshore transit safety compliant</li>
+        </ul>
+        <a href="#contact" class="pillar-more">Engage <span>→</span></a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ========================================================= -->
+<!-- STATS BAND -->
+<!-- ========================================================= -->
+<section class="stats-band">
+  <div class="stat-card">
+    <span class="stat-num" data-count="2">0</span><span class="stat-suf">+</span>
+    <span class="stat-lab">Years field experience</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-num" data-count="3">0</span>
+    <span class="stat-lab">Vessel classes</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-num" data-count="5">0</span>
+    <span class="stat-lab">Live certifications</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-num" data-count="0">0</span>
+    <span class="stat-lab">Lost-time incidents</span>
+  </div>
+</section>
+
+<!-- ========================================================= -->
+<!-- BIO -->
+<!-- ========================================================= -->
+<section class="bio" id="bio">
+  <div class="bio-grid">
+    <div class="bio-portrait">
+      <div class="portrait-frame">
+        <img src="images/portrait.jpeg" alt="David Ugbor — Maritime Safety & Fire Officer, Port Harcourt" class="portrait-img">
+      </div>
+      <p class="portrait-caption mono">FIG. 01 — D. UGBOR · CHARKIN MARITIME OFFSHORE SAFETY CENTER</p>
+    </div>
+
+    <div class="bio-text">
+      <span class="section-tag mono">— Bio</span>
+      <h2 class="section-h">
+        Based in Port Harcourt. <em>Built for the field.</em>
+      </h2>
+      <p class="bio-lead">
+        I was raised in Port Harcourt — Nigeria's oil capital — surrounded by
+        rigs, refineries, and the language of hazard. I trained at
+        <strong>Charkin Maritime Offshore Safety Center</strong>, completing
+        STCW Basic Safety, <strong>Advanced Fire Fighting (IMO 2.03)</strong>,
+        OPITO HUET 5092 with EBS, and ISPON HSE Levels 1 &amp; 2.
+      </p>
+      <p class="bio-lead">
+        From <strong>2022 to 2024</strong> I worked at
+        <strong>Fieldoption Engineering Ltd</strong> as a Fire Watch and Safety
+        Officer — standing watch over live industrial operations, managing
+        hot-work permits, conducting daily fixed-system checks, and running
+        HSE compliance across active field sites.
+      </p>
+      <p class="bio-lead">
+        The Advanced Fire Fighting cert is not a wall decoration. It means BA
+        entry, smoke-filled compartment search, foam and CO₂ attack, casualty
+        removal. The fire watch is the prevention. The AFF is the answer if
+        prevention fails. Both belong on the same officer.
+      </p>
+
+      <p class="bio-lead bio-devops">
+        Off the water, I invest in the technical side of the industry.
+        Certified in the <strong>Git &amp; GitHub Bootcamp</strong> (Colt Steele)
+        and <strong>Linux Shell Scripting</strong> (Jason Cannon) — the same
+        command-line discipline that runs vessels also runs the infrastructure
+        behind them.
+      </p>
+
+      <div class="bio-quick">
+        <div><span class="qk-key mono">BASED IN</span><span class="qk-val">Port Harcourt, Nigeria</span></div>
+        <div><span class="qk-key mono">EMPLOYER</span><span class="qk-val">Fieldoption Engineering Ltd · 2022–2024</span></div>
+        <div><span class="qk-key mono">LANGUAGES</span><span class="qk-val">English · Pidgin · Igbo</span></div>
+        <div><span class="qk-key mono">STATUS</span><span class="qk-val"><span class="dot-ok"></span>Available — seeking offshore mobilisation</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================= -->
+<!-- QUOTE BAND -->
+<!-- ========================================================= -->
+<section class="quote-band">
+  <p class="mono-eyebrow mono">— Personal credo</p>
+  <blockquote class="quote-body">
+    “A safe ship is a <em>thinking</em> ship. The job is not to be brave when
+    it burns — it is to make sure it never does.”
+  </blockquote>
+</section>
+
+<!-- ========================================================= -->
+<!-- CREDENTIALS -->
+<!-- ========================================================= -->
+<section class="credentials" id="credentials">
+  <div class="section-head">
+    <span class="section-tag mono">— Credentials</span>
+    <h2 class="section-h">Papers, <em>in order.</em></h2>
+    <p class="section-lead">
+      Every credential is current, verifiable, and issued by an accredited
+      maritime authority.
+    </p>
+  </div>
+
+  <div class="cred-grid">
+
+    <!-- STCW badge — real logo -->
+    <article class="cred">
+      <div class="cred-medal">
+        <img src="images/logo-stcw.png" alt="STCW anchor logo" class="cred-logo">
+      </div>
+      <h3>STCW 2010</h3>
+      <p>Basic Safety Training · STCW-A-VI/1</p>
+      <span class="cred-issuer">Charkin Maritime Offshore Safety Center</span>
+      <span class="cred-tag"><span class="dot-ok"></span>Valid</span>
+    </article>
+
+    <!-- AFF — STCW real logo -->
+    <article class="cred featured">
+      <div class="cred-medal">
+        <img src="images/logo-stcw.png" alt="STCW Advanced Fire Fighting logo" class="cred-logo">
+      </div>
+      <h3>Advanced Fire Fighting</h3>
+      <p>AFF · IMO 2.03 · STCW-A-VI/3</p>
+      <span class="cred-issuer">Charkin Maritime Offshore Safety Center</span>
+      <span class="cred-tag"><span class="dot-ok"></span>Primary specialty</span>
+    </article>
+
+    <!-- OPITO badge — real logo -->
+    <article class="cred">
+      <div class="cred-medal">
+        <img src="images/logo-opito.png" alt="OPITO official logo" class="cred-logo">
+      </div>
+      <h3>OPITO HUET 5092</h3>
+      <p>Helicopter Underwater Escape + EBS</p>
+      <span class="cred-issuer">Charkin Maritime Offshore Safety Center</span>
+      <span class="cred-tag"><span class="dot-ok"></span>Valid</span>
+    </article>
+
+    <!-- ISPON HSE 1 badge — real logo -->
+    <article class="cred">
+      <div class="cred-medal">
+        <img src="images/logo-ispon.png" alt="ISPON official badge" class="cred-logo">
+      </div>
+      <h3>ISPON HSE Level 1</h3>
+      <p>Occupational Health, Safety &amp; Environment</p>
+      <span class="cred-issuer">Institute of Safety Professionals of Nigeria</span>
+      <span class="cred-tag"><span class="dot-ok"></span>Valid</span>
+    </article>
+
+    <!-- ISPON HSE 2 badge — real logo -->
+    <article class="cred">
+      <div class="cred-medal">
+        <img src="images/logo-ispon.png" alt="ISPON official badge" class="cred-logo">
+      </div>
+      <h3>ISPON HSE Level 2</h3>
+      <p>Advanced HSE Management</p>
+      <span class="cred-issuer">Institute of Safety Professionals of Nigeria</span>
+      <span class="cred-tag"><span class="dot-ok"></span>Valid</span>
+    </article>
+
+    <!-- Charkin badge — real logo -->
+    <article class="cred">
+      <div class="cred-medal">
+        <img src="images/logo-charkin.png" alt="Charkin Maritime Offshore Safety Center logo" class="cred-logo">
+      </div>
+      <h3>Charkin Trained</h3>
+      <p>Alumni of accredited maritime offshore safety center</p>
+      <span class="cred-issuer">Port Harcourt, Nigeria</span>
+      <span class="cred-tag"><span class="dot-ok"></span>Lifetime</span>
+    </article>
+  </div>
+
+  <!-- IN PROGRESS -->
+  <div class="cred-inprogress-wrap">
+    <p class="cred-inprogress-label mono">— Also certified</p>
+    <div class="cred-grid cred-grid-inprogress">
+
+      <article class="cred cred-wip">
+        <div class="cred-medal">
+          <svg viewBox="0 0 100 100" width="100" height="100" aria-hidden="true" class="cred-wip-icon">
+            <circle cx="50" cy="50" r="46" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 3"/>
+            <circle cx="50" cy="32" r="7" fill="currentColor" opacity="0.7"/>
+            <line x1="50" y1="39" x2="50" y2="56" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="50" y1="56" x2="38" y2="68" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <line x1="50" y1="56" x2="62" y2="68" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <line x1="50" y1="56" x2="36" y2="48" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <line x1="50" y1="56" x2="64" y2="48" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3>Git &amp; GitHub</h3>
+        <p>Version control · Branching · Collaboration workflows</p>
+        <span class="cred-issuer">Colt Steele · Udemy Bootcamp</span>
+        <span class="cred-tag"><span class="dot-ok"></span>Certified</span>
+      </article>
+
+      <article class="cred cred-wip">
+        <div class="cred-medal">
+          <svg viewBox="0 0 100 100" width="100" height="100" aria-hidden="true" class="cred-wip-icon">
+            <circle cx="50" cy="50" r="46" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 3"/>
+            <rect x="22" y="30" width="56" height="40" rx="4" fill="none" stroke="currentColor" stroke-width="1.8"/>
+            <line x1="22" y1="40" x2="78" y2="40" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="29" cy="35" r="2" fill="currentColor" opacity="0.5"/>
+            <circle cx="36" cy="35" r="2" fill="currentColor" opacity="0.5"/>
+            <circle cx="43" cy="35" r="2" fill="currentColor" opacity="0.5"/>
+            <text x="28" y="56" font-family="monospace" font-size="11" fill="currentColor" opacity="0.8">$ ./run</text>
+            <text x="28" y="65" font-family="monospace" font-size="9" fill="currentColor" opacity="0.5">▌</text>
+          </svg>
+        </div>
+        <h3>Linux Shell Scripting</h3>
+        <p>Bash · Automation · Command-line operations</p>
+        <span class="cred-issuer">Jason Cannon · Udemy</span>
+        <span class="cred-tag"><span class="dot-ok"></span>Certified</span>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================= -->
+<!-- FLEET -->
+<!-- ========================================================= -->
+<section class="fleet" id="fleet">
+  <div class="section-head">
+    <span class="section-tag mono">— Vessel readiness</span>
+    <h2 class="section-h">Trained for <em>three hulls.</em></h2>
+    <p class="section-lead">
+      Each vessel class brings a distinct hazard profile. STCW, AFF, HUET, and HSE-certified
+      to operate safely across all three.
+    </p>
+  </div>
+
+  <div class="fleet-rows">
+    <article class="vessel">
+      <div class="vessel-code">PSV</div>
+      <div class="vessel-body">
+        <h3>Platform Supply Vessel</h3>
+        <p>Cargo, fuel, water and dry-bulk delivery to fixed and floating platforms. Safety officer on deck — permit-to-work authority, fuel transfer oversight, HSE compliance, and AFF-certified emergency standby on helideck approach windows.</p>
+        <div class="vessel-tags">
+          <span>Permit to Work</span><span>HSE Compliance</span><span>Helideck Safety</span><span>AFF Standby</span>
+        </div>
+      </div>
+      <svg class="vessel-ship" viewBox="0 0 320 90" aria-hidden="true">
+        <path d="M10 65 L40 65 L52 50 L260 50 L282 65 L310 65 L310 78 L10 78 Z" fill="currentColor"/>
+        <rect x="80" y="28" width="60" height="22" fill="currentColor"/>
+        <rect x="148" y="18" width="34" height="32" fill="currentColor"/>
+        <path d="M165 18 L165 6" stroke="currentColor" stroke-width="2"/>
+      </svg>
+    </article>
+
+    <article class="vessel">
+      <div class="vessel-code">AHT</div>
+      <div class="vessel-body">
+        <h3>Anchor Handling Tug</h3>
+        <p>High-energy deck environment — winches, wire, chain, stern roller in constant motion. Safety officer role covers JSA execution, risk assessment for rig moves, toolbox talks, near-miss reporting, and emergency response readiness.</p>
+        <div class="vessel-tags">
+          <span>JSA / Risk Assessment</span><span>Toolbox Talks</span><span>Rig Moves</span><span>Emergency Response</span>
+        </div>
+      </div>
+      <svg class="vessel-ship" viewBox="0 0 320 90" aria-hidden="true">
+        <path d="M10 65 L34 65 L50 50 L228 50 L268 65 L310 65 L300 78 L20 78 Z" fill="currentColor"/>
+        <rect x="100" y="20" width="70" height="30" fill="currentColor"/>
+        <rect x="180" y="30" width="22" height="20" fill="currentColor"/>
+        <path d="M118 20 L118 4 M148 20 L148 4" stroke="currentColor" stroke-width="2"/>
+      </svg>
+    </article>
+
+    <article class="vessel">
+      <div class="vessel-code">MPSV</div>
+      <div class="vessel-body">
+        <h3>Multi-Purpose Support Vessel</h3>
+        <p>ROV ops, dive support, crane work — hot work is constant. Hot-work permit authority, gas-free testing, AFF-certified response, and HSE documentation across simultaneous high-risk operations.</p>
+        <div class="vessel-tags">
+          <span>Hot Work Authority</span><span>Gas-Free Testing</span><span>AFF Response</span><span>HSE Documentation</span>
+        </div>
+      </div>
+      <svg class="vessel-ship" viewBox="0 0 320 90" aria-hidden="true">
+        <path d="M10 65 L40 65 L52 50 L260 50 L282 65 L310 65 L310 78 L10 78 Z" fill="currentColor"/>
+        <rect x="60" y="22" width="55" height="28" fill="currentColor"/>
+        <!-- Crane centered in hull -->
+        <path d="M138 50 L138 8 L200 8 L200 22" stroke="currentColor" stroke-width="2" fill="none"/>
+        <path d="M138 18 L170 18" stroke="currentColor" stroke-width="2"/>
+        <line x1="170" y1="18" x2="170" y2="32" stroke="currentColor" stroke-width="1" stroke-dasharray="3 2"/>
+        <circle cx="200" cy="30" r="3" fill="currentColor"/>
+      </svg>
+    </article>
+  </div>
+</section>
+
+<!-- ========================================================= -->
+<!-- WATERS WORKED -->
+<!-- ========================================================= -->
+<section class="waters" id="waters">
+  <div class="section-head">
+    <span class="section-tag mono">— Target deployment</span>
+    <h2 class="section-h">Where I'm <em>ready to deploy.</em></h2>
+    <p class="section-lead">
+      Trained and certified for operations across the Gulf of Guinea
+      and West African energy sector.
+    </p>
+  </div>
+
+  <div class="waters-grid">
+    <div class="water-card">
+      <span class="water-coord mono">N 04°45' · E 06°50'</span>
+      <h3>Bonny Terminal</h3>
+      <p>Primary energy hub — tank loading, FPSO support, and hot-work environments I'm trained and ready for.</p>
+    </div>
+    <div class="water-card">
+      <span class="water-coord mono">N 04°35' · E 07°10'</span>
+      <h3>Port Harcourt</h3>
+      <p>Home base. Nigeria's oil capital — the environment I was formed in, the market I know best.</p>
+    </div>
+    <div class="water-card">
+      <span class="water-coord mono">N 04°10' · E 08°30'</span>
+      <h3>Akpo / Egina Fields</h3>
+      <p>Deep-water target — MPSV subsea support, ROV ops, and crane work. Certified for the role.</p>
+    </div>
+    <div class="water-card">
+      <span class="water-coord mono">N 03°00' · E 06°00'</span>
+      <h3>Bight of Benin</h3>
+      <p>Deep-water transit zone — platform supply and offshore installation support across the GoG.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================= -->
+<!-- CONTACT -->
+<!-- ========================================================= -->
+<section class="contact" id="contact">
+  <div class="contact-inner">
+    <span class="section-tag mono">— Contact</span>
+    <h2 class="contact-h">Let's <em>work.</em></h2>
+    <p class="contact-lead">
+      Available for offshore contracts, day-rate cover, and project
+      mobilisations across West Africa and beyond. Emergency cover by
+      arrangement.
+    </p>
+
+    <div class="contact-grid">
+      <a class="contact-card" href="mailto:ugbordavido@gmail.com">
+        <span class="cc-key mono">EMAIL</span>
+        <span class="cc-val">ugbordavido@gmail.com</span>
+        <span class="cc-arrow">→</span>
+      </a>
+      <a class="contact-card" href="tel:+2347051262870">
+        <span class="cc-key mono">PHONE</span>
+        <span class="cc-val">+234 705 126 2870</span>
+        <span class="cc-arrow">→</span>
+      </a>
+      <a class="contact-card" href="https://wa.me/2347051262870" target="_blank" rel="noopener noreferrer">
+        <span class="cc-key mono">WHATSAPP</span>
+        <span class="cc-val">+234 705 126 2870</span>
+        <span class="cc-arrow">→</span>
+      </a>
+      <div class="contact-card static">
+        <span class="cc-key mono">PORT OF CALL</span>
+        <span class="cc-val">Port Harcourt, Nigeria</span>
+        <span class="cc-arrow">·</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================= -->
+<!-- FOOTER -->
+<!-- ========================================================= -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="logo-mark">
+        <svg viewBox="0 0 40 40" width="32" height="32" aria-hidden="true">
+          <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.4" fill="none"/>
+          <path d="M20 4 L22 20 L20 36 L18 20 Z" fill="currentColor"/>
+          <path d="M4 20 L20 18 L36 20 L20 22 Z" fill="currentColor" opacity="0.55"/>
+        </svg>
+      </div>
+      <div>
+        <p class="fb-name">David Ugbor</p>
+        <p class="fb-sub">Maritime Safety &amp; Fire Officer</p>
+      </div>
+    </div>
+    <div class="footer-meta mono">
+      <span>© <span id="yearVal">2026</span></span>
+      <span>·</span>
+      <span>Port Harcourt, Nigeria</span>
+      <span>·</span>
+      <span>#zeroharm</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>
