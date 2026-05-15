@@ -129,6 +129,9 @@ em {
   position: relative;
   width: 100%;
   background: var(--ink);
+  padding: 0;
+  max-width: none;
+  margin: 0;
 }
 .hero-carousel {
   position: relative;
@@ -183,8 +186,6 @@ em {
   left: 0; right: 0; top: 0; bottom: 0;
   display: flex; flex-direction: column; justify-content: flex-end;
   padding: 0 48px 80px;
-  max-width: 1500px;
-  margin: 0 auto;
   z-index: 2;
   pointer-events: none;
   background:
@@ -900,7 +901,6 @@ section { padding: 120px 40px; max-width: 1500px; margin: 0 auto; }
    ========================================================= */
 @media (max-width: 1200px) {
   .pillar-grid { grid-template-columns: repeat(2, 1fr); }
-  @media (max-width: 600px) { .pillar-grid { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; } }
   .cred-grid { grid-template-columns: repeat(2, 1fr); }
   .vessel { grid-template-columns: 160px 1fr 220px; gap: 24px; }
 }
