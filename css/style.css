@@ -995,3 +995,180 @@ body::after {
   }
   body::after { display: none; }
 }
+/* =========================================================
+   MOBILE FIXES — append at end of file
+   ========================================================= */
+@media (max-width: 760px) {
+
+  /* — TOP BAR — fit on small screens — */
+  .top-bar-inner {
+    grid-template-columns: auto auto;
+    gap: 10px;
+    padding: 12px 16px;
+  }
+  .logo { gap: 8px; }
+  .logo-mark svg { width: 28px; height: 28px; }
+  .logo-name { font-size: 13px; letter-spacing: 0.05em; }
+  .logo-sub { font-size: 8px; letter-spacing: 0.15em; }
+  .top-hashtag {
+    padding: 6px 10px;
+    font-size: 9px;
+    letter-spacing: 0.08em;
+  }
+
+  /* — HERO — readable, no overflow — */
+  .hero-carousel { height: auto; min-height: 100vh; }
+
+  .hero-overlay {
+    position: relative;
+    padding: 32px 20px 48px;
+    background: linear-gradient(to top, rgba(6,12,22,0.92) 0%, rgba(6,12,22,0.75) 60%, rgba(6,12,22,0.55) 100%);
+    min-height: 100vh;
+    justify-content: flex-end;
+  }
+
+  .hero-slide {
+    height: 60vh;
+    position: absolute;
+    inset: 0 0 auto 0;
+  }
+  .hero-slide .slide-art { height: 60vh; }
+
+  .hero-eyebrow {
+    font-size: 9px;
+    letter-spacing: 0.2em;
+    line-height: 1.5;
+    margin-bottom: 18px;
+    word-break: normal;
+    overflow-wrap: break-word;
+  }
+
+  .hero-h {
+    font-size: clamp(28px, 8vw, 40px);
+    line-height: 1.15;
+    margin-bottom: 20px;
+  }
+
+  .hero-sub {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+  }
+
+  .hero-cta { gap: 10px; }
+  .btn { padding: 12px 20px; font-size: 12px; }
+
+  /* — SLIDE CAPTION — don't overlap text — */
+  .slide-caption {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    bottom: auto;
+    left: auto;
+    font-size: 8px;
+    letter-spacing: 0.15em;
+    padding: 6px 10px;
+    max-width: 60%;
+    text-align: right;
+    align-items: flex-end;
+  }
+  .slide-caption span:last-child {
+    white-space: normal;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+  }
+
+  .hero-dots {
+    bottom: 16px;
+  }
+  .dot { width: 24px; }
+  .dot.active { width: 36px; }
+
+  /* — SECTION SPACING — tighter for mobile — */
+  section { padding: 60px 18px; }
+  .section-head { margin-bottom: 36px; }
+  .section-h {
+    font-size: clamp(32px, 9vw, 44px);
+    line-height: 1.05;
+  }
+  .section-tag { font-size: 10px; letter-spacing: 0.2em; }
+  .section-lead { font-size: 15px; }
+
+  /* — PILLARS — single column, cleaner — */
+  .pillar-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 100%;
+  }
+  .pillar-body { padding: 24px 22px 26px; }
+  .pillar-body h3 { font-size: 24px; }
+  .pillar-summary { font-size: 14px; }
+  .pillar-num { font-size: 42px; top: 12px; right: 16px; }
+
+  /* — STATS BAND — readable on phone — */
+  .stats-band { padding: 40px 18px; }
+  .stat-num { font-size: 56px; }
+  .stat-suf { font-size: 28px; }
+  .stat-lab { font-size: 9px; letter-spacing: 0.18em; margin-top: 10px; }
+
+  /* — BIO — — */
+  .bio-grid { gap: 32px; }
+  .bio-portrait { max-width: 260px; margin: 0 auto; }
+  .bio-lead { font-size: 16px; line-height: 1.7; }
+  .qk-key { font-size: 9px; letter-spacing: 0.2em; }
+  .qk-val { font-size: 14px; }
+
+  /* — QUOTE BAND — — */
+  .quote-band { padding: 60px 22px; }
+  .quote-body { font-size: clamp(22px, 6vw, 30px); line-height: 1.35; }
+
+  /* — CREDENTIALS — — */
+  .cred-grid { grid-template-columns: 1fr; max-width: 100%; gap: 18px; }
+  .cred-grid-inprogress { grid-template-columns: 1fr; }
+  .cred { padding: 28px 22px; }
+  .cred-medal, .cred-logo { width: 80px; height: 80px; }
+  .cred h3 { font-size: 20px; }
+  .cred-issuer { font-size: 9px; letter-spacing: 0.14em; }
+
+  /* — FLEET — — */
+  .vessel-code { font-size: 48px; }
+  .vessel-body h3 { font-size: 24px; }
+  .vessel-body p { font-size: 14px; }
+  .vessel-tags span { font-size: 9px; padding: 4px 10px; }
+
+  /* — WATERS — — */
+  .water-card { padding: 28px 22px; }
+  .water-card h3 { font-size: 26px; }
+  .water-coord { font-size: 9px; }
+
+  /* — CONTACT — — */
+  .contact { padding: 60px 18px; }
+  .contact-h { font-size: clamp(48px, 14vw, 80px); }
+  .contact-lead { font-size: 15px; margin-bottom: 36px; }
+  .contact-card {
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto;
+    padding: 22px 20px;
+    gap: 6px 14px;
+  }
+  .cc-key { grid-column: 1 / 2; grid-row: 1; font-size: 9px; }
+  .cc-val { grid-column: 1 / 2; grid-row: 2; font-size: 16px; word-break: break-word; }
+  .cc-arrow { grid-column: 2; grid-row: 1 / 3; align-self: center; }
+
+  /* — FOOTER — — */
+  .footer { padding: 24px 18px; }
+  .footer-meta {
+    flex-wrap: wrap;
+    gap: 6px;
+    font-size: 9px;
+    letter-spacing: 0.14em;
+  }
+}
+
+/* — Prevent any wide-letter-spacing from breaking words on tiny screens — */
+@media (max-width: 400px) {
+  .mono, .section-tag, .qk-key, .cc-key, .stat-lab, .water-coord, .footer-meta {
+    letter-spacing: 0.12em !important;
+  }
+}
+
