@@ -121,6 +121,13 @@ em {
   letter-spacing: 0.1em;
   font-weight: 500;
 }
+.logo-mark-nav {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.logo-mark-nav:hover { transform: rotate(-10deg) scale(1.12); }
 
 /* =========================================================
    HERO — Full-bleed rotating carousel
@@ -1078,6 +1085,7 @@ body::after {
     font-size: 9px;
     letter-spacing: 0.08em;
   }
+  .logo-mark-nav svg { width: 34px; height: 34px; }
 
   /* — HERO — readable, no overflow — */
   .hero-carousel { height: auto; min-height: 100vh; }
