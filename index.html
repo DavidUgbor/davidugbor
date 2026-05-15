@@ -314,7 +314,7 @@
   <div class="cred-grid">
 
     <!-- STCW badge — real logo -->
-    <article class="cred">
+    <article class="cred" data-cert="images/cert-stcw.jpg" role="button" tabindex="0" aria-label="View STCW 2010 certificate">
       <div class="cred-medal">
         <img src="images/logo-stcw.png" alt="STCW anchor logo" class="cred-logo">
       </div>
@@ -322,10 +322,11 @@
       <p>Basic Safety Training · STCW-A-VI/1</p>
       <span class="cred-issuer">Charkin Maritime Offshore Safety Center</span>
       <span class="cred-tag"><span class="dot-ok"></span>Valid</span>
+      <span class="cred-view-cert mono">View certificate →</span>
     </article>
 
     <!-- AFF — STCW real logo -->
-    <article class="cred featured">
+    <article class="cred featured" data-cert="images/cert-aff.jpg" role="button" tabindex="0" aria-label="View Advanced Fire Fighting certificate">
       <div class="cred-medal">
         <img src="images/logo-stcw.png" alt="STCW Advanced Fire Fighting logo" class="cred-logo">
       </div>
@@ -333,10 +334,11 @@
       <p>AFF · IMO 2.03 · STCW-A-VI/3</p>
       <span class="cred-issuer">Charkin Maritime Offshore Safety Center</span>
       <span class="cred-tag"><span class="dot-ok"></span>Primary specialty</span>
+      <span class="cred-view-cert mono">View certificate →</span>
     </article>
 
     <!-- OPITO badge — real logo -->
-    <article class="cred">
+    <article class="cred" data-cert="images/cert-huet.jpg" role="button" tabindex="0" aria-label="View OPITO HUET 5092 certificate">
       <div class="cred-medal">
         <img src="images/logo-opito.png" alt="OPITO official logo" class="cred-logo">
       </div>
@@ -344,10 +346,11 @@
       <p>Helicopter Underwater Escape + EBS</p>
       <span class="cred-issuer">Charkin Maritime Offshore Safety Center</span>
       <span class="cred-tag"><span class="dot-ok"></span>Valid</span>
+      <span class="cred-view-cert mono">View certificate →</span>
     </article>
 
     <!-- ISPON HSE 1 badge — real logo -->
-    <article class="cred">
+    <article class="cred" data-cert="images/cert-ispon-1.jpg" role="button" tabindex="0" aria-label="View ISPON HSE Level 1 certificate">
       <div class="cred-medal">
         <img src="images/logo-ispon.png" alt="ISPON official badge" class="cred-logo">
       </div>
@@ -355,10 +358,11 @@
       <p>Occupational Health, Safety &amp; Environment</p>
       <span class="cred-issuer">Institute of Safety Professionals of Nigeria</span>
       <span class="cred-tag"><span class="dot-ok"></span>Valid</span>
+      <span class="cred-view-cert mono">View certificate →</span>
     </article>
 
     <!-- ISPON HSE 2 badge — real logo -->
-    <article class="cred">
+    <article class="cred" data-cert="images/cert-ispon-2.jpg" role="button" tabindex="0" aria-label="View ISPON HSE Level 2 certificate">
       <div class="cred-medal">
         <img src="images/logo-ispon.png" alt="ISPON official badge" class="cred-logo">
       </div>
@@ -366,10 +370,11 @@
       <p>Advanced HSE Management</p>
       <span class="cred-issuer">Institute of Safety Professionals of Nigeria</span>
       <span class="cred-tag"><span class="dot-ok"></span>Valid</span>
+      <span class="cred-view-cert mono">View certificate →</span>
     </article>
 
     <!-- Charkin badge — real logo -->
-    <article class="cred">
+    <article class="cred" data-cert="images/cert-charkin.jpg" role="button" tabindex="0" aria-label="View Charkin training certificate">
       <div class="cred-medal">
         <img src="images/logo-charkin.png" alt="Charkin Maritime Offshore Safety Center logo" class="cred-logo">
       </div>
@@ -377,6 +382,7 @@
       <p>Alumni of accredited maritime offshore safety center</p>
       <span class="cred-issuer">Port Harcourt, Nigeria</span>
       <span class="cred-tag"><span class="dot-ok"></span>Lifetime</span>
+      <span class="cred-view-cert mono">View certificate →</span>
     </article>
   </div>
 
@@ -598,6 +604,15 @@
     </div>
   </div>
 </footer>
+
+<!-- Certificate lightbox -->
+<div class="cert-lightbox" id="certLightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Certificate viewer">
+  <div class="cert-lb-backdrop" id="certLbBackdrop"></div>
+  <div class="cert-lb-content">
+    <img class="cert-lb-img" id="certLbImg" src="" alt="">
+    <button class="cert-lb-close" id="certLbClose" aria-label="Close certificate viewer">&#x2715;</button>
+  </div>
+</div>
 
 <script src="js/main.js"></script>
 </body>

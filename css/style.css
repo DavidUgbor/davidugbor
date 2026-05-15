@@ -639,6 +639,68 @@ section { padding: 120px 40px; max-width: 1500px; margin: 0 auto; }
   text-transform: uppercase;
 }
 
+/* "View certificate" prompt on clickable cred cards */
+.cred-view-cert {
+  display: block;
+  margin-top: 14px;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  color: var(--accent);
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.cred[data-cert] { cursor: pointer; }
+.cred[data-cert]:hover .cred-view-cert,
+.cred[data-cert]:focus .cred-view-cert { opacity: 1; }
+.cred[data-cert]:focus { outline: 2px solid var(--accent); outline-offset: 4px; }
+
+/* Certificate lightbox */
+.cert-lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  align-items: center;
+  justify-content: center;
+}
+.cert-lightbox.open { display: flex; }
+.cert-lb-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(6, 12, 22, 0.92);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+.cert-lb-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: min(92vw, 960px);
+  max-height: 90vh;
+}
+.cert-lb-img {
+  display: block;
+  max-width: 100%;
+  max-height: 88vh;
+  object-fit: contain;
+  border-radius: 4px;
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.6);
+}
+.cert-lb-close {
+  position: absolute;
+  top: -48px;
+  right: 0;
+  font-size: 28px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1;
+  padding: 8px;
+  transition: color 0.2s, transform 0.2s;
+}
+.cert-lb-close:hover { color: #fff; transform: rotate(90deg); }
+
 /* In-progress learning block */
 .cred-inprogress-wrap {
   margin-top: 56px;
